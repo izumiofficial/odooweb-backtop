@@ -9,7 +9,6 @@
     "license": "OPL-1",
     "depends": [
         "website",
-        "eg_app_base"
     ],
     "data": [
         "views/res_config_settings_views.xml",
