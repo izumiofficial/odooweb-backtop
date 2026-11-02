@@ -1,0 +1,13 @@
+<odoo>
+    <template id="eg_website_back_to_top" name="Website Back to Top" inherit_id="website.layout">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <t t-if="request.env['ir.config_parameter'].sudo().get_param('eg_website_back_to_top.enable_eg_website_back_to_top', 'False') == 'True'">
+                <button type="button" class="o_website_back_to_top o_not_editable" data-scroll-threshold="300"
+                        aria-label="Back to top" aria-hidden="true" tabindex="-1" title="Back to top">
+                    <span class="fa fa-chevron-up" aria-hidden="true"/>
+                    <span class="visually-hidden">Back to top</span>
+                </button>
+            </t>
+        </xpath>
+    </template>
+</odoo>
